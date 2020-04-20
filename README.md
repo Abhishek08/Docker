@@ -12,10 +12,21 @@
  ```sh
     docker inspect [Container or Image name /ID]
 ```
-4. Launching a container with ‘docker run’ command
+4. Pull an image or a repository from a registry
  ```sh
-   docker run --rm [IMAGE] – removes a container after it exits.
-   docker run -td [IMAGE] – starts a container and keeps it running.
-   docker run -it [IMAGE] – starts a container, allocates a pseudo-TTY connected to the container’s stdin, and creates an interactive bash shell in the container.
-   docker run -it-rm [IMAGE] – creates, starts, and runs a command inside the container. Once it executes the command, the container is removed.
+   docker pull ubuntu 
 ```
+5. pull a docker image with old version
+ ```sh
+   docker pull ubuntu:16.04
+```
+6. List of all available images in local
+ ```sh
+   docker images 
+```
+7. Launching a container with ‘docker run’ command
+ ```sh
+   docker run [imagename|ImageId] 
+```
+
+
