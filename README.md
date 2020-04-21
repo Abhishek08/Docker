@@ -26,7 +26,16 @@
 ```
 7. Launching a container with ‘docker run’ command
  ```sh
-   docker run [imagename|ImageId] 
+   docker run [imagename|ImageId]
+   
+   Create/run/start a docker container from image
+   docker run -d --name <container_Name> <image_name>:<image_version/tag>
+   d - run your container in back ground (detached)
+   
+   Expose your application to host server
+   docker run -d  -p <host_port>:<container_port> --name <container_Name> <image_name>:<Image_version/tag>
+   Example : docker run -d --name httpd_server -p 8080:80 httpd:2.2
 ```
+
 
 
