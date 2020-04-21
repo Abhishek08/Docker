@@ -10,7 +10,7 @@
     docker info
 ```
 
-3. Return low-level information on a container or image
+3. You can use the docker inspect command to find out low-level information about your container or image
  ```sh
     docker inspect [Container or Image name /ID]
 ```
@@ -90,9 +90,19 @@
   docker rmi [IMAGE]
 ```
 
-16. login to a docker container
+16. Docker Exec Bash and Docker SSH into Container
+You'll often need to interact with a container's shell to create a service or solve problems. 
+You can use the docker exec command to create an interactive shell. Let's start a container
+from the ubuntu image with a bash shell:
 ```sh
-   docker exec -it <container_Name> /bin/bash
+   docker run --name my_ubuntu -it ubuntu:latest bash
+   
+   Suppose you want to Docker ssh into container 'my_ubuntu'. You can use the docker exec   bash method:
+   docker exec -it my_ubuntu bash
+   
+   Use docker exec   to issue commands into your container. For example, you can run the ls  command on your 'my_ubuntu'     docker container directly from the command prompt:
+   docker exec -it my_ubuntu ls
+   
 ```
 
 
