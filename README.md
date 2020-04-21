@@ -2,7 +2,7 @@
 
 1. Show the Docker version information
 ```sh
-    docker -version
+    docker --version
 ```
 
 2. Display system-wide information
