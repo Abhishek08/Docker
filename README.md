@@ -123,11 +123,14 @@ The Dockerfile contains a list of instructions that Docker will execute when you
 
 Docker provides a set of standard instructions to be used in the Dockerfile, like FROM, COPY, RUN, ENV, EXPOSE, CMD just to name a few basic ones.
 
-Example 1 . 
+##### Example 1 . 
 
-Step 1. create the DockerFile using vi Dockerfile command 
+Step 1. create the DockerFile  
+```sh
+vi Dockerfile
+```
 
-Step 2. Paste below instruction into Dockerfile
+Step 2. Paste below instruction paste into Dockerfile
 ```sh
 FROM ubuntu  
 RUN mkdir TEST
@@ -145,4 +148,34 @@ Step 4. To create the container from Docker Image. docker run -d --name <contain
 ```sh
   docker run -d --name ubuntu_container  ubuntu_server
 ```
+##### Example 2 . 
+Create custom image for Nginx server .
+    
+Step 1. Create Index.html file 
+ ```sh
+  vi index.html
+```  
+Step 2. Put Some content into the index.html 
+ ```sh
+ <html>
+ <body>
+     <h1> This is sample example of docker ngnix </h1>
+ </body>
+ </html>
+```  
+Step 3: Create the DockerFile in same Directory 
+
+```sh
+vi Dockerfile
+```
+Step 3: Paste below content into the Dockerfile and save (press esc btn then wq! end enter to save the file).
+
+```sh
+FROM nginx:latest
+COPY index.html /usr/share/nginx/html/index.html   // Copy the file from source location to Destination
+RUN chmod +r /usr/share/nginx/html/index.html      // Providing the permission to index.html 
+CMD ["nginx","-g","daemon off;"]                   //  Nginx uses the daemon off directive to run in the foreground.  
+```
+
+
 
