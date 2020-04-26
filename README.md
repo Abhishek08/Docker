@@ -123,7 +123,26 @@ The Dockerfile contains a list of instructions that Docker will execute when you
 
 Docker provides a set of standard instructions to be used in the Dockerfile, like FROM, COPY, RUN, ENV, EXPOSE, CMD just to name a few basic ones.
 
+Example 1 . 
 
+Step 1. create the DockerFile using vi Dockerfile command 
 
+Step 2. Paste below instruction into Dockerfile
+```sh
+FROM ubuntu  
+RUN mkdir TEST
+RUN apt-get update
+RUN apt-get install tree
+```
+Step 3. docker build -t <imageName> <Define the path where Dockerfile present>
 
+```sh
+  docker build -t ubuntu_server . 
+```
+ . is represent that Dockerfile is present in same Directory .
+ 
+Step 4. To create the container from Docker Image. docker run -d --name <containerName> <image_name>:<Image_version/tag>
+```sh
+  docker run -d --name ubuntu_container  ubuntu_server
+```
 
