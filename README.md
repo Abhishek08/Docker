@@ -1,5 +1,13 @@
 ## Important docker command 
 
+## Important tag for Docker 
+```sh
+--detach , -d        Run container in background and print container ID
+--name                Assign a name to the container
+--publish , -p        Publish a container’s port(s) to the host
+--volume , -v        Bind mount a volume
+--restart            Restart policy to apply when a container exits
+```
 1. Show the Docker version information
 ```sh
     docker version
