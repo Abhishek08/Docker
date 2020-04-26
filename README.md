@@ -115,11 +115,20 @@ from the ubuntu image with a bash shell:
 
 ##### .......................................................................................
 # Docker File 
-A Dockerfile is a text file that defines a Docker image. You’ll use a Dockerfile to create your own custom Docker image.
 
-you'll want to create your own Dockerfile when existing images don’t satisfy your project needs. This will actually happen most of the time, which means that learning about the Dockerfile is a pretty essential part of working with Docker.
+1. The Dockerfile is a text file that (mostly) contains the instructions that you would execute on the command line to create an image.
 
-The Dockerfile contains a list of instructions that Docker will execute when you issue the docker build command. 
+2. You’ll use a Dockerfile to create your own custom Docker image.
+
+3. Docker will build a Docker image automatically by reading these instructions from the Dockerfile.
+
+Creating the Custom Docker image below is the process 
+
+1. you create the Dockerfile and define the steps that build up your images
+
+2. you issue the docker build command which will build a Docker image from your Dockerfile
+
+3. now you can use this image to start containers with the docker run command
 
 Docker provides a set of standard instructions to be used in the Dockerfile, like FROM, COPY, RUN, ENV, EXPOSE, CMD just to name a few basic ones.
 
