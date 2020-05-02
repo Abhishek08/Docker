@@ -74,3 +74,11 @@ docker network rm  <network-name|network id>
 ```sh
 docker network disconnect <network-name|network id> <container-name|Container ID>
 ```
+
+7. Create the container on Specific network 
+
+```sh
+docker container run -d --name <container_name> --network <network_id|network_name> <imageId|image_name>
+
+example : docker container run -d --name nginx_container --network my_network nginx
+```
