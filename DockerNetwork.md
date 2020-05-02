@@ -91,5 +91,27 @@ DNS makes it possible for us to use easy to remember domain names in place of co
 
 Containers uses DNS to communicate. Containers don’t use IP address to Communicate.
 
+Example . Ping Nginx container from another container 
 
+```sh
+Step 1: launch 2 nginx container 
+ 
+docker run -d --name nginx_01 --network my_netwrork nginx 
+docker run -d --name nginx_02 --network my_netwrork nginx 
+ 
+Step 2: Login to Nginx server and install ping command 
+ 
+docker exec -it nginx_01 /bin/bash  // After executing this command you are login into nginx and execute below command 
+ 
+apt-get update
+apt-get install inetutils-ping
+
+Step 3: ping nginx_02 from nginx_01 
+
+docker exec -it nginx_01 ping nginx_02
+
+
+
+
+```
 
