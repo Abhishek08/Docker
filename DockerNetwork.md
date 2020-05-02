@@ -83,8 +83,6 @@ example : docker container run -d --name nginx_container --network my_network ng
 ## Docker Network DNS   
 DNS stands for Domain Name System.  
 
-DNS is how domain names are translated into IP addresses. DNS is what allows you to use your web browser to find web sites. 
-
 DNS makes it possible for us to use easy to remember domain names in place of complex IP addresses.
 
 Containers uses DNS to communicate. Containers don’t use IP address to Communicate.
