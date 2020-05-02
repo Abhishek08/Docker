@@ -44,7 +44,7 @@ Create new Network
 ```sh
 docker network create [--driver <driver-name>] <network-name> 
 
-Example : docker network create --driver bridge my_network 
+Example : docker network create -d --driver bridge my_network 
 
 If the option –driver is not given then the network will be created as a bridge network. Else, the specified driver will be used.
 
