@@ -56,3 +56,9 @@ docker network inspect <network-name|network id>
 example : docker network inspect my_network
 ```
 
+Filter in inspect command. Ex. want to see the only container info 
+
+```sh
+docker network inspect -f '{{.Containers}}' my_network  // this command will give the information of only container running on 
+my_network 
+```
