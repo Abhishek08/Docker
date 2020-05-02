@@ -110,8 +110,5 @@ Step 3: ping nginx_02 from nginx_01
 
 docker exec -it nginx_01 ping nginx_02
 
-
-
-
 ```
 
