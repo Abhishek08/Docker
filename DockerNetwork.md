@@ -32,3 +32,12 @@ The none is used to attach a Docker container to a no-network network! This mean
 
 ## Host Network - 
 When a container is connected to the host network, it gets the same network configuration as in the host OS.
+
+## Docker Network Commands  
+
+List of Available network 
+```sh
+docker network ls 
+'''
+
+
