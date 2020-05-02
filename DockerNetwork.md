@@ -35,12 +35,12 @@ When a container is connected to the host network, it gets the same network conf
 
 ## Docker Network Commands  
 
-List of Available network 
+1. List of Available network 
 ```sh
 docker network ls  // Show the list of network 
 ```
 
-Create new Network 
+2. Create new Network 
 ```sh
 docker network create [--driver <driver-name>] <network-name> 
 
@@ -49,27 +49,27 @@ Example : docker network create -d --driver bridge my_network
 If the option –driver is not given then the network will be created as a bridge network. Else, the specified driver will be used.
 
 ```
-Provides details for the given Docker network. 
+3. Provides details for the given Docker network. 
 ```sh
 docker network inspect <network-name|network id>
 
 example : docker network inspect my_network
 ```
 
-Filter in inspect command. Ex. want to see the only container info 
+4. Filter in inspect command. Ex. want to see the only container info 
 
 ```sh
 docker network inspect -f '{{.Containers}}' my_network  // this command will give the information of only container running on 
 my_network 
 ```
 
-Remove the given Docker network. 
+5. Remove the given Docker network. 
 
 ```sh
 docker network rm  <network-name|network id>
 ```
 
-Disconnects the given container to the specified network.
+6. Disconnects the given container to the specified network.
 
 ```sh
 docker network disconnect <network-name|network id> <container-name|Container ID>
