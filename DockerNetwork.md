@@ -49,7 +49,10 @@ Example : docker network create --driver bridge my_network
 If the option –driver is not given then the network will be created as a bridge network. Else, the specified driver will be used.
 
 ```
+Provides details for the given Docker network. 
+```sh
+docker network inspect <network-name|network id>
 
-
-
+example : docker network inspect my_network
+```
 
