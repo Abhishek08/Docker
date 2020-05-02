@@ -62,3 +62,15 @@ Filter in inspect command. Ex. want to see the only container info
 docker network inspect -f '{{.Containers}}' my_network  // this command will give the information of only container running on 
 my_network 
 ```
+
+Remove the given Docker network. 
+
+```sh
+docker network rm  <network-name|network id>
+```
+
+Disconnects the given container to the specified network.
+
+```sh
+docker network disconnect <network-name|network id> <container-name|Container ID>
+```
