@@ -3,11 +3,9 @@
 
 Docker networking is basically used to establish communication between the docker containers and the outside world via host machine or you can say it is a communication passage through which all the isolated containers communicate with each other in various situations to perform the required actions. I
 
-When Docker is installed, a default bridge network named  docker0 is created. Each new Docker container is automatically attached to this network, unless a custom network is specified.
+When Docker is installed, a default VPN is created called bridge. bridge. This is default Network driver of Docker
 
-Each Container connect to virtual private network called ‘bridge’.
-
-bridge : This is default Network driver of Docker
+Each new Docker container is automatically attached to this network, unless a custom network is specified.
 
 All Containers on same bridge can communicate each other with-out -p (port)
 
