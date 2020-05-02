@@ -37,7 +37,8 @@ When a container is connected to the host network, it gets the same network conf
 
 List of Available network 
 ```sh
-docker network ls 
-'''
+docker network ls  // Show the list of network 
+```
+
 
 
