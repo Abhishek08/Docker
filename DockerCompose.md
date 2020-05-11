@@ -29,7 +29,7 @@ docker-compose version
 // create and start containers
 docker-compose up
 // start services with detached mode
-docker-compose -d up
+docker-compose up -d 
 // start specific service
 docker-compose up <service-name>
 // list images
