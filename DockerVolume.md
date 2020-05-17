@@ -57,6 +57,50 @@ Step 8  go to app and you can see TEST folder and one.txt file are present.
  
 ```
 
+#### Example 2 Docker volume example using mySQL 
+```sh
+
+Step 1  Create the volume
+        docker volume create DBVOL
+        
+Step 2  Pull the image of mysql
+        ocker pull mysql
+        
+Step 3  Run the containr with named volume 
+        docker run -d --name [nameofcontainer] -e [enviourment] -v [volumename]:[destinationpath] [imagename]             
+        ex: docker run -d --name myDb1 -e "MYSQL_ROOT_PASSWORD=1234" --mount source=DB,target=/var/lib/mysql mysql
+  
+Step 4  Download mysql client 
+        apt-get install mysql-client
+ 
+Step 5  Inspect the container and get the IP address and port 
+        docker inspect [containername]
+        
+Step 6  login to mysql  
+        mysql -u root[password] -h[ipaddress] -P[port]
+        ex. mysql -u root -p1234 -h 172.17.0.3 -P 3306
+        
+Step 7  Create the database
+        create database one;  // this command create the database 
+        show databases;       // this command show the list of database 
+        exit                  // Exit from mysql 
+        
+Step 8  Stop and Remove the container 
+        docker stop [container] 
+        docker rm   [container] 
+
+Step 9  create another container with same volume
+        docker run -d --name [nameofcontainer] -e [enviourment] -v [volumename]:[destinationpath] [imagename]             
+        ex: docker run -d --name myDb2 -e "MYSQL_ROOT_PASSWORD=1234" --mount source=DB,target=/var/lib/mysql mysql
+        
+Step 10 login to mysql new container 
+        mysql -u root[password] -h[ipaddress] -P[port]
+        ex. mysql -u root -p1234 -h 172.17.0.3 -P 3306
+        
+Step 11 We can see the same db is available with new container means db is persistant      
+        
+```
+
 
 
 
