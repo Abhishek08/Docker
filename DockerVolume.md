@@ -34,7 +34,7 @@ Step 2  Pull the image from docker hub
         docker pull busybox
  
 Step 3  Run the containr with named volume 
-        docker run -d --nmae [nameofcontaineer] --mount source=[nameofVolume],target=[destination] [nameofImage]
+        docker run -d -it --nmae [nameofcontaineer] --mount source=[nameofVolume],target=[destination] [nameofImage]
         ex. docker run -d --name mybusybox --mount source=MyVolume,target=/app busybox
 
 Step 4  bash login into the container 
