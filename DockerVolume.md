@@ -101,6 +101,16 @@ Step 11 We can see the same db is available with new container means db is persi
         
 ```
 
+#### Bind Volumes
+➤ Bind Mounts : Bind mount means a file or directory on the host machine is mounted into a container.. 
+
+➤ Bind mounts may be stored anywhere on the host system.
+
+➤ Non-Docker processes on the Docker host or a Docker container can modify them at any time. 
+
+➤ Bind Mount can’t be use in DockerFile.
+
+#### Difference between bind volume and mount volue
 
 
 
