@@ -20,3 +20,44 @@
 ➤ When you create a volume, it is stored within a directory on the Docker host machine. 
 
 ➤ Volumes can not be removed when user destroy the containers
+
+➤ We can assign same volume to multiple container 
+
+#### Example of Docker Volume 
+
+```sh
+
+Step 1  Create the volume
+        docker volume create MyVolume
+
+Step 2  Pull the image from docker hub 
+        docker pull busybox
+ 
+Step 3  Run the containr with named volume 
+        docker run -d --nmae [nameofcontaineer] --mount source=[nameofVolume],target=[destination] [nameofImage]
+        ex. docker run -d --name mybusybox --mount source=MyVolume,target=/app busybox
+
+Step 4  bash login into the container 
+        docker exec -it mybusybox sh
+        
+Step 5  create the folder in /app  and file 
+        mkdir TEST 
+        cat -> one.txt 
+        exit // exit from the container
+ 
+Step 6  create the another container with same volume 
+        docker run -d --nmae [nameofcontaineer] --mount source=[nameofVolume],target=[destination] [nameofImage]
+        ex. docker run -d --name mybusybox2 --mount source=MyVolume,target=/app busybox
+        
+Step 7  bash login into the container 
+        docker exec -it mybusybox2 sh
+        
+Step 8  go to app and you can see TEST folder and one.txt file are present. 
+               
+ 
+```
+
+
+
+
+
