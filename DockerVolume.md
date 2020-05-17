@@ -18,3 +18,5 @@
 ➤ Volumes can be create by Volume Command in Docker File. 
 
 ➤ When you create a volume, it is stored within a directory on the Docker host machine. 
+
+➤ Volumes can not be removed when user destroy the containers
