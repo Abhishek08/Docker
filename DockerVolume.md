@@ -16,3 +16,5 @@
 ➤ Volumes : Volumes are stored in a part of the host filesystem which is managed by Docker
 
 ➤ Volumes can be create by Volume Command in Docker File. 
+
+➤ When you create a volume, it is stored within a directory on the Docker host machine. 
