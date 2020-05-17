@@ -110,7 +110,7 @@ Step 11 We can see the same db is available with new container means db is persi
 
 ➤ Bind Mount can’t be use in DockerFile.
 
-#### Difference between bind volume and mount volue
+#### Example of Bind volume
 
 
 
