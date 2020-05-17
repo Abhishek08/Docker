@@ -112,6 +112,32 @@ Step 11 We can see the same db is available with new container means db is persi
 
 #### Example of Bind volume
 
+```sh
+Step 1  Create folder that you want to share 
+        mkdir share
+        cd share 
+        
+Step 2  Pull the Nginx image from docker hub
+        docker pull nginx
 
+Step 3  Create the Run the docker container with Bind volume 
+        docker run -d --name [nameofcontainer] -p [portoptional] --mount type=bind,source="$(pwd)",target=[targetpath] [imagename]
+        ex: docker run -d --name ng1 -p 8080:80 --mount type=bind,source="$(pwd)",target=/usr/share/nginx/html nginx
+
+Step 4  Create the file in your current share folder  
+        vi index.html
+        
+        Put some content in the file
+        <html>
+        <body>
+        <p>this is the example of bind volume</p>
+        </body>
+        </html>
+
+        save this file .
+
+Step 5  Goto the Browser localhost:8080/index.html
+        you can see that your file that you created are available in docker container without stop and login inot the container.
+```
 
 
