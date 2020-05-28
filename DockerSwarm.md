@@ -8,8 +8,11 @@ It allows to connect multiple hosts with Docker together.
 
 #### Problem Statement that solve by Docker 
 ➤ How to Scale Containers? 
+
 ➤ How to manage Containers or re-create if they Fails/Crash? 
+
 ➤ How to Upgrade the Service with Zero DownTime? 
+
 ➤ How to Manage the containers that running on Difference Host / Node
 
 #### Docker swarm 
