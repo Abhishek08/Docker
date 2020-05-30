@@ -6,7 +6,7 @@ It is the native clustering tool for Docker.
 
 It allows to connect multiple hosts with Docker together.
 
-#### Problem Statement that solve by Docker 
+#### Problem Statement that solve by Docker Swarm
 ➤ How to Scale Containers? 
 
 ➤ How to manage Containers or re-create if they Fails/Crash? 
@@ -33,6 +33,12 @@ It allows to connect multiple hosts with Docker together.
 
 ➤ Overlay network 
   If you expose a port from a service, it’ll be available on any node in cluster. It really helps with external load balancing.
+  
+➤ Docker Swarm have Two Type of Nodes Master(Manager) and Worker. 
+
+➤ Docker Swarm is working based on RAFT algorith. 
+
+➤ Raft Algo : The leader node is constantly checking in with its fellow manager nodes and syncing their states
 
 #### Docker Service 
 
