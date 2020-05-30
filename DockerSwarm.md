@@ -16,8 +16,6 @@ It allows to connect multiple hosts with Docker together.
 ➤ How to Manage the containers that running on Difference Host / Node
 
 
-![stack Overflow](https://sreeninet.files.wordpress.com/2015/05/docker5.png)
-
 #### Docker swarm 
 
 ➤ It allows to connect multiple hosts with Docker together.
