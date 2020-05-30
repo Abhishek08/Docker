@@ -51,5 +51,34 @@ Basic Comamnd of Docker Service
 
 ```
 
+#### Create first Docker service example 
+```sh
+
+docker service --name[nameofservice] [imagename] [action]   
+docker service --name pingservice alpine ping www.google.com .  // New Service will create with the name of pingservice
+
+List of service 
+
+docker service ls // Give the list of available service 
+
+Inspect the docker service  
+
+docker service inspect pingservice 
+
+Scaling the service 
+
+docker service update pingservice --replicas=3 // Create the replicas for same service 
+
+List of container runnong for that service 
+
+docker ps -a  // all the running container will be visisble here 
+
+
+Remove any container docker service will create new container automatically 
+
+docker kill [container_name]
+docker ps -a // after sometime you can see new container will created because we define that we need 4 replicas 
+```
+
 
 
