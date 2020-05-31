@@ -51,6 +51,16 @@ Master Host will work as Manager or Worker.
  
  N= Number of Nodes 
 
+##### How to Initialize the Docker Swarm
+
+```sh
+ docker swarm init 
+ 
+or
+
+ docker swarm init --advertise-addr <MANAGER-IP>
+   
+```
 
 #### Docker Service 
 
