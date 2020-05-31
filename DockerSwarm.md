@@ -1,11 +1,13 @@
 
 # Docker Swarm
 
-Docker swarm is a container orchestration tool build and manage by Docker.
+The cluster management and orchestration features embedded in the Docker Engine are built using swarmkit.
 
 It's a native clustering tool provided by Docker which provides high-availability and high-performance for your application by distributing it to all nodes inside the swarm cluster.
 
 A Docker engine participating in a swarm is called a node. 
+
+A swarm consists of multiple Docker hosts which run in swarm mode and act as managers (to manage membership and delegation) and workers (which run swarm services).
 
 Swarm uses the SwarmKit library for orchestration.  
 
@@ -28,7 +30,7 @@ we can specify an overlay network for our services. When swarm manager initializ
 
 ###### Load balancing
 
-we can expose the ports for services to an external load balancer. Moreover, the swarm lets us specify how to distribute service containers between nodes, internally.
+Swarm manager uses ingress load balancing to expose the services you want to make available externally to the swarm..
  
 #####  Security
 
