@@ -7,7 +7,10 @@ Swarm uses the SwarmKit library for orchestration.
 
 This toolkit uses Raft consensus algorithm to coordinate and decision making of a distributed system. SwarmKit is responsible for Orchestration, Scheduling and Cluster Management.
 
-Docker Swarm is the Docker-native solution for deploying a cluster of Docker hosts. You can use it to quickly deploy a cluster of Docker hosts running either on your local machine or on supported cloud platforms.
+A Docker engine participating in a swarm is called a node. 
+
+A node can either be a manager node or a worker node.
+
 
 ### Features of Docker Swarm
 
