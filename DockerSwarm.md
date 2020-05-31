@@ -21,6 +21,14 @@ It is the native clustering tool for Docker.
 
 
 
+Docker Swarm contain multiple Docker Host that running on Docker Swarm mode. Each host may be work as Master or Worker. 
+Master Host will work as Manager or Worker.
+
+
+##### Formula for Creating the Master Host.
+ Master Or Manager = (n-1)/2 
+ N= Number of Nodes 
+
 ###### How to Scale Containers? 
 
 ###### How to manage Containers or re-create if they Fails/Crash? 
