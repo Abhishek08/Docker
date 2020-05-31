@@ -12,9 +12,6 @@ It is the native clustering tool for Docker.
 ###### How to Upgrade the Service with Zero DownTime? 
 When updating a service, you can define how many containers should be updated at a time and what should happen if the new containers start failing. After a certain threshold, Swarm can either stop the update or (as of Docker 17.04) roll back the containers to the previous image and settings. Don’t worry about having to bring your boss a coffee tomorrow morning.
 
-###### How to Manage the containers that running on Difference Host / Node
- -- It allows to connect multiple hosts with Docker together.
-
 ###### Build-in Service discovery and Load balancing
 
 Docker Engine swarm mode makes it easy to publish ports for services to make them available to resources outside the swarm. All nodes participate in an ingress routing mesh.The routing mesh enables each node in the swarm to accept connections on published ports for any service running in the swarm, even if there’s no task running on the node. The routing mesh routes all incoming requests to published ports on available nodes to an active container.
