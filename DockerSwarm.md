@@ -4,20 +4,19 @@
 Docker Swarm is a container orchestration tool built and managed by Docker, Inc. 
 It is the native clustering tool for Docker.
 
+### Features of Docker Swarm
 
-###### How to Scale Containers? 
+###### Scaling
 
-###### How to manage Containers or re-create if they Fails/Crash? 
+We can declare the number of tasks we want to run, for each service. The swarm manager automatically adapts by adding or removing tasks to maintain the desired state, whenever we scale up or down.
 
-###### How to Upgrade the Service with Zero DownTime? 
+###### Multi-host networking
 
+we can specify an overlay network for our services. When swarm manager initializes or updates the application, it automatically assigns addresses to the containers on the overlay network.
 
-###### Build-in Service discovery and Load balancing
+###### Load balancing
 
-Docker Engine swarm mode makes it easy to publish ports for services to make them available to resources outside the swarm. All nodes participate in an ingress routing mesh.The routing mesh enables each node in the swarm to accept connections on published ports for any service running in the swarm, even if there’s no task running on the node. The routing mesh routes all incoming requests to published ports on available nodes to an active container.
- 
-If you expose a port from a service, it’ll be available on any node in cluster. It really helps with external load balancing.
- 
+we can expose the ports for services to an external load balancer. Moreover, the swarm lets us specify how to distribute service containers between nodes, internally.
  
 #####  Security
 
