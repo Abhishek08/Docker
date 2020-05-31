@@ -1,13 +1,15 @@
 
 # Docker Swarm
 
-Docker swarm is a container orchestration tool, meaning that it allows the user to manage multiple containers deployed across multiple host machines.
+Docker swarm is a container orchestration tool build and manage by Docker.
+
+It's a native clustering tool provided by Docker which provides high-availability and high-performance for your application by distributing it to all nodes inside the swarm cluster.
+
+A Docker engine participating in a swarm is called a node. 
 
 Swarm uses the SwarmKit library for orchestration.  
 
 This toolkit uses Raft consensus algorithm to coordinate and decision making of a distributed system. SwarmKit is responsible for Orchestration, Scheduling and Cluster Management.
-
-A Docker engine participating in a swarm is called a node. 
 
 A node can either be a manager node or a worker node.
 
