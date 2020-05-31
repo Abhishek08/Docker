@@ -49,7 +49,9 @@ Master Host will work as Manager or Worker.
 
 
 ##### Formula for Creating the Master Host.
+
  Master Or Manager = (n-1)/2 
+ 
  N= Number of Nodes 
 
 
