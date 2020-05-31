@@ -19,9 +19,7 @@ When updating a service, you can define how many containers should be updated at
 
 Docker Engine swarm mode makes it easy to publish ports for services to make them available to resources outside the swarm. All nodes participate in an ingress routing mesh.The routing mesh enables each node in the swarm to accept connections on published ports for any service running in the swarm, even if there’s no task running on the node. The routing mesh routes all incoming requests to published ports on available nodes to an active container.
  
- If you expose a port from a service, it’ll be available on any node in cluster. It really helps with external load balancing.
- 
- ##### Task Scheduling and Reconciliation
+If you expose a port from a service, it’ll be available on any node in cluster. It really helps with external load balancing.
  
  
 #####  Security
