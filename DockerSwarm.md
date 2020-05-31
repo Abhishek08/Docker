@@ -4,6 +4,31 @@
 Docker Swarm is a container orchestration tool built and managed by Docker, Inc. 
 It is the native clustering tool for Docker.
 
+
+###### How to Scale Containers? 
+
+###### How to manage Containers or re-create if they Fails/Crash? 
+
+###### How to Upgrade the Service with Zero DownTime? 
+When updating a service, you can define how many containers should be updated at a time and what should happen if the new containers start failing. After a certain threshold, Swarm can either stop the update or (as of Docker 17.04) roll back the containers to the previous image and settings. Don’t worry about having to bring your boss a coffee tomorrow morning.
+
+###### How to Manage the containers that running on Difference Host / Node
+ -- It allows to connect multiple hosts with Docker together.
+
+###### Build-in Service discovery and Load balancing
+
+Docker Engine swarm mode makes it easy to publish ports for services to make them available to resources outside the swarm. All nodes participate in an ingress routing mesh.The routing mesh enables each node in the swarm to accept connections on published ports for any service running in the swarm, even if there’s no task running on the node. The routing mesh routes all incoming requests to published ports on available nodes to an active container.
+ 
+ If you expose a port from a service, it’ll be available on any node in cluster. It really helps with external load balancing.
+ 
+ ##### Task Scheduling and Reconciliation
+ 
+ 
+#####  Security
+
+Docker Swarm comes with great security features out of the box. When a node joins the swarm, it uses a token that not only verifies itself but also verifies it is joining the swarm you think it is. From that moment on, all communication between nodes takes place using mutual TLS encryption. This encryption is all provisioned and managed automatically by the Swarm, so you never need to worry about renewing certificates, and other typical security hassles.
+
+
 ###### Important component of Docker swarm 
 
  1. Service : Service define the task that need to be execute on manager and workder nodes.
@@ -29,28 +54,6 @@ Master Host will work as Manager or Worker.
  Master Or Manager = (n-1)/2 
  N= Number of Nodes 
 
-###### How to Scale Containers? 
-
-###### How to manage Containers or re-create if they Fails/Crash? 
-
-###### How to Upgrade the Service with Zero DownTime? 
-When updating a service, you can define how many containers should be updated at a time and what should happen if the new containers start failing. After a certain threshold, Swarm can either stop the update or (as of Docker 17.04) roll back the containers to the previous image and settings. Don’t worry about having to bring your boss a coffee tomorrow morning.
-
-###### How to Manage the containers that running on Difference Host / Node
- -- It allows to connect multiple hosts with Docker together.
-
-###### Build-in Service discovery and Load balancing
-
-Docker Engine swarm mode makes it easy to publish ports for services to make them available to resources outside the swarm. All nodes participate in an ingress routing mesh.The routing mesh enables each node in the swarm to accept connections on published ports for any service running in the swarm, even if there’s no task running on the node. The routing mesh routes all incoming requests to published ports on available nodes to an active container.
- 
- If you expose a port from a service, it’ll be available on any node in cluster. It really helps with external load balancing.
- 
- ##### Task Scheduling and Reconciliation
- 
- 
-#####  Security
-
-Docker Swarm comes with great security features out of the box. When a node joins the swarm, it uses a token that not only verifies itself but also verifies it is joining the swarm you think it is. From that moment on, all communication between nodes takes place using mutual TLS encryption. This encryption is all provisioned and managed automatically by the Swarm, so you never need to worry about renewing certificates, and other typical security hassles.
 
 #### Docker Service 
 
