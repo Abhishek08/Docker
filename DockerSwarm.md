@@ -1,17 +1,17 @@
 
 # Docker Swarm
 
-The cluster management and orchestration features embedded in the Docker Engine are built using swarmkit.
+Docker swarm is contailer orchestration tools build and manager by Docker. 
 
 It's a native clustering tool provided by Docker which provides high-availability and high-performance for your application by distributing it to all nodes inside the swarm cluster.
 
 A Docker engine participating in a swarm is called a node. 
 
-A swarm consists of multiple Docker hosts which run in swarm mode and act as managers (to manage membership and delegation) and workers (which run swarm services).
-
-Swarm uses the SwarmKit library for orchestration.  
+Swarm uses the SwarmKit library for orchestration. 
 
 This toolkit uses Raft consensus algorithm to coordinate and decision making of a distributed system. SwarmKit is responsible for Orchestration, Scheduling and Cluster Management.
+
+A swarm consists of multiple Docker hosts which run in swarm mode and act as managers (to manage membership and delegation) and workers (which run swarm services).
 
 A node can either be a manager node or a worker node.
 
