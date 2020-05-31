@@ -15,7 +15,8 @@ It is the native clustering tool for Docker.
  4. Worker node: Worker nodes run tasks distributed by the manager node in the swarm.Each worker node runs an agent that reports back to the master node about the state of the tasks assigned to it, so the manager node can keep track of services and tasks running in the swarm.
 
 
-###### Docker Swarm Cluster
+##### Docker Swarm Cluster
+
 ![Cluster](https://foxutech.com/wp-content/uploads/2017/03/swarm-architecture.png)
 
 
