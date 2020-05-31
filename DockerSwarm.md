@@ -4,6 +4,16 @@
 Docker Swarm is a container orchestration tool built and managed by Docker, Inc. 
 It is the native clustering tool for Docker.
 
+###### Important component of Docker swarm 
+
+ 1. Service : Service define the task that need to be execute on manager and workder nodes.
+ 
+ 2. Task : Tasks are Docker containers that execute the commands you defined in the service.
+ 
+ 3. Manager Node: It delivers work (in the form of tasks) to worker nodes. and Monitor the worker node.
+ 
+ 4. Worker node: Worker nodes run tasks distributed by the manager node in the swarm.Each worker node runs an agent that reports back to the master node about the state of the tasks assigned to it, so the manager node can keep track of services and tasks running in the swarm.
+
 
 ###### How to Scale Containers? 
 
