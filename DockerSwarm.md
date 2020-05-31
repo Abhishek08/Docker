@@ -11,10 +11,6 @@ Swarm uses the SwarmKit library for orchestration.
 
 This toolkit uses Raft consensus algorithm to coordinate and decision making of a distributed system. SwarmKit is responsible for Orchestration, Scheduling and Cluster Management.
 
-A swarm consists of multiple Docker hosts which run in swarm mode and act as managers (to manage membership and delegation) and workers (which run swarm services).
-
-A node can either be a manager node or a worker node.
-
 
 ### Features of Docker Swarm
 
@@ -23,10 +19,6 @@ A node can either be a manager node or a worker node.
 Services running on the cluster are easily scalable through a single parameter. You can declare the number of replicas a service should have and the swarm manager automatically adapts by adding or removing containers to maintain the desired state.
 
 The swarm also provides resilience through reconciliation of the desired states. The manager continuously monitors the state of the nodes in the cluster. If a node goes offline, the manager will reconcile the difference in the desired state and the current state by redeploying the lost services on the available nodes.
-
-###### Multi-host networking
-
-we can specify an overlay network for our services. When swarm manager initializes or updates the application, it automatically assigns addresses to the containers on the overlay network.
 
 ###### Load balancing
 
