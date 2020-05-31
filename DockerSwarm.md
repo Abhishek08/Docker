@@ -12,12 +12,11 @@ It is the native clustering tool for Docker.
 
 ➤ How to Upgrade the Service with Zero DownTime? 
 
+--- Swarm stores configuration for containers. If you update configuration, containers are updated in batches, so service by default will be available all the time.
+
 ➤ How to Manage the containers that running on Difference Host / Node
 
-
-#### Docker swarm 
-
-➤ It allows to connect multiple hosts with Docker together.
+ -- It allows to connect multiple hosts with Docker together.
 
 ➤ High availability 
 
