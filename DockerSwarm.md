@@ -10,7 +10,7 @@ It is the native clustering tool for Docker.
 ###### How to manage Containers or re-create if they Fails/Crash? 
 
 ###### How to Upgrade the Service with Zero DownTime? 
-When updating a service, you can define how many containers should be updated at a time and what should happen if the new containers start failing. After a certain threshold, Swarm can either stop the update or (as of Docker 17.04) roll back the containers to the previous image and settings. Don’t worry about having to bring your boss a coffee tomorrow morning.
+
 
 ###### Build-in Service discovery and Load balancing
 
