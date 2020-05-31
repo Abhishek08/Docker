@@ -1,7 +1,7 @@
 
 # Docker Swarm
 
-Docker swarm is contailer orchestration tools build and manager by Docker. 
+Docker swarm is container orchestration tools build and manager by Docker. 
 
 It's a native clustering tool provided by Docker which provides high-availability and high-performance for your application by distributing it to all nodes inside the swarm cluster.
 
