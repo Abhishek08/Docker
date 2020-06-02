@@ -120,6 +120,18 @@ docker ps -a // after sometime you can see new container will created because we
 3. Docker Service mode (Replicated and Global)
 4. Docker Swarm Availablity
 
+##### Command to create Swarm Visualizer
+
+```sh
+
+docker service create \
+  --name=viz \
+  --publish=8080:8080/tcp \
+  --constraint=node.role==manager \
+  --mount=type=bind,src=/var/run/docker.sock,dst=/var/run/docker.sock \
+  dockersamples/visualizer
+  
+```
 
 
 
