@@ -113,5 +113,19 @@ docker kill [container_name]
 docker ps -a // after sometime you can see new container will created because we define that we need 4 replicas 
 ```
 
+#### Docker node Commands 
+
+```sh
+demote      Demote one or more nodes from manager in the swarm
+inspect     Display detailed information on one or more nodes
+ls          List nodes in the swarm
+promote     Promote one or more nodes to manager in the swarm
+ps          List tasks running on one or more nodes, defaults to current node
+rm          Remove one or more nodes from the swarm
+update      Update a node
+```
+
+
+
 
 
