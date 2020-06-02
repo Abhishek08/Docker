@@ -116,8 +116,10 @@ docker ps -a // after sometime you can see new container will created because we
 #### Important Topic for Docker Swarm 
 
 1. Docker Swarm node Promote and Demote
-2. Docker Service mode (Replicated and Global)
-3. Docker Swarm Availablity
+2. Docker Swarm Visualizer
+3. Docker Service mode (Replicated and Global)
+4. Docker Swarm Availablity
+
 
 
 
