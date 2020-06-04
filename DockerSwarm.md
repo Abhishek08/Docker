@@ -149,6 +149,8 @@ update      Update a node
 
 ### Docker Swarm Availability 
 
+There are 3 types of state present in the docker node. 
+
 1. Active 
 2. Pause 
 3. Drain 
