@@ -153,11 +153,11 @@ update      Update a node
 2. Pause 
 3. Drain 
 
-1. Active - Docker availability Active means that node is ready to take the new task from Master/Manager node.
+**Active** - Docker availability Active means that node is ready to take the new task from Master/Manager node.
 
-2. Pause - If Any node availability pause means that node is not ready to take new task from Master or Manager node. 
+**Pause** - If Any node availability pause means that node is not ready to take new task from Master or Manager node. 
 
-3. Drain -  Sometime if you have any planned maintanance acitity on that node so you can set the availability drain. So that node will not take any task from the master and Manger shift all the running container from that node to active node.
+**Drain** -  Sometime if you have any planned maintanance acitity on that node so you can set the availability drain. So that node will not take any task from the master and Manger shift all the running container from that node to active node.
 
 
 ##### Command to change the availability - 
