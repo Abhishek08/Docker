@@ -147,7 +147,7 @@ update      Update a node
 
 
 
-##### Docker Swarm Availability 
+### Docker Swarm Availability 
 
 1. Active 
 2. Pause 
