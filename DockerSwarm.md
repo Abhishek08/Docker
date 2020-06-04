@@ -155,7 +155,7 @@ There are 3 types of state present in the docker node.
 2. Pause 
 3. Drain 
 
-**Active** - Docker availability Active means that node is ready to take the new task from Master/Manager node.
+**Active** - This is the default state of node. In this state node is ready to take new task from ther master or Manger node. 
 
 **Pause** - If Any node availability pause means that node is not ready to take new task from Master or Manager node. 
 
