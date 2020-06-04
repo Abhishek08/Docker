@@ -147,7 +147,7 @@ update      Update a node
 
 
 
-### Docker Swarm Node Availability 
+## Docker Swarm Node Availability 
 
 There are 3 types of state present in the docker node. 
 
