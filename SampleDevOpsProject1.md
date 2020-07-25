@@ -31,7 +31,14 @@ Click Save and Apply
 ```
 
 3. Create the new FreeStyle Project 
+```sh
 
+Git URL - https://github.com/Abhishek08/webapp.git
+
+WebHook Connection URL - http://IPADDRESS/github-webhook/ (push)
+
+BUILD - Package 
+```
 4. Post Build Action Define below details.
 
 ```sh
