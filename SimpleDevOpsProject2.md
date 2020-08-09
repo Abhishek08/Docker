@@ -36,24 +36,31 @@ Click Save and Apply
 
 ``` sh 
 
-Git URL - https://github.com/Abhishek08/webapp.git
+Git URL - https://github.com/Abhishek08/node-js-sample.git
 
 WebHook Connection URL - http://IPADDRESS/github-webhook/ (push)
 
 BUILD - npm install  // to download all the dependecines 
       - npm test  // to perform test case execution 
-     
+
+tar czf Node.tar.gz node_modules index.js package.json public app.json     
 ```
 
 ##### Step 4 - Post Build Action Define below details.
 ``` sh 
 
-sudo mv  ./home/ubuntu/com/target/WebApp.war /home/ubuntu/com; // Copy the war file into the your Server Location 
-cd /home/ubuntu/com; // Goto the Location where DockerFile is present.
-docker stop mycontainer; // Stop the Container if its running 
-docker rm mycontainer; // Remove the container
-docker build -t myimage .; // Create the new Image using Docker file
-docker run -d --name mycontainer -p 8090:8080 myimage; // Create new Container using the custom Image.
+Source file : **/*.gz 
+
+Exec Command 
+
+mv ./home/ubuntu/one/node-js-sample/Node.tar.gz /home/ubuntu/test/Node.tar.gz;
+cd /home/ubuntu/test/
+tar -xf Node.tar.gz ;
+docker rmi nodeimage;
+docker stop nodecontainer;
+docker rm nodecontainer;
+docker build -t nodeimage .;
+docker run -d --name nodecontainer -p 5001:5000 nodeimage;
 
 ```
 
