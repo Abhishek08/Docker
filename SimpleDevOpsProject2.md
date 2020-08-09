@@ -69,7 +69,7 @@ docker run -d --name nodecontainer -p 5001:5000 nodeimage;
 ``` sh 
 FROM node:latest
 
-MAINTAINER abhishek Modi 
+MAINTAINER Abhishek Modi 
 
 RUN echo "Tryin to build my first application"
 
