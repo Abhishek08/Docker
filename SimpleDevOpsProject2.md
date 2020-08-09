@@ -64,5 +64,23 @@ docker run -d --name nodecontainer -p 5001:5000 nodeimage;
 
 ```
 
+##### Step 5 - Docker File in Node Js server 
 
+``` sh 
+FROM node:latest
+
+MAINTAINER abhishek Modi 
+
+RUN echo "Tryin to build my first application"
+
+COPY . /var/www
+
+WORKDIR /var/www
+
+RUN npm install
+
+EXPOSE 3000
+
+ENTRYPOINT ["npm","start"]
+```
 
