@@ -3,7 +3,7 @@
 
 ##### Below are the Steps for creating this project .
 
-##### Installation of Android SDK on Ubuntu 
+##### Installation of Android SDK on Ubuntu 18.04 and setup the configration 
 
 ```sh
 
@@ -41,7 +41,76 @@
 
 17.  yes | sdkmanager "platform-tools" "platforms;android-29"
 
-18. 
+```
+
+##### Install Jenkins on Same Server 
+
+```sh 
+
+1. wget -q -O - http://pkg.jenkins-ci.org/debian/jenkins-ci.org.key | sudo apt-key add -
+
+2. sudo sh -c 'echo deb http://pkg.jenkins-ci.org/debian-stable binary/ > /etc/apt/sources.list.d/jenkins.list'
+
+3. sudo apt update
+
+4. sudo apt install jenkins
+
+5. sudo systemctl start jenkins 
+
+6. Get the password sudo cat /var/lib/jenkins/secrets/initialAdminPassword
+
+7. Install Suggested Plugins 
+
+
+```
+
+##### Create S3 Bucket on Amazon and Create IM roles 
+
+```sh
+1. Goto AWS and Search S3 
+
+2. Create new S3 bucket,
+
+3. Search IM on AWS search 
+
+4. In IM page click on the roles 
+
+5. Create new Role and Select AWS Service and EC2 and Next.
+
+6. Attach permissions policies- Select the AmazonS3FullAccess and Click Next. 
+
+7. Add tags (optional) -  Provide the key and value
+
+8. Review - Provide the role name and click on create role
+
+
+```
+
+##### Attach Role to EC2 
+
+```sh
+
+1. Goto Ec2 and Click on Running instance 
+
+2. Select the Instance where Jenkins are installed and click Action (button) -> Instance Setting - > Attach and Replace IM roles.
+
+3. Attach/Replace IAM Role - Select the Roles that you created from DropDown and click on Apply.
+
+
+```
+
+##### Install S3 publisher plugin on Jenkins 
+
+
+```sh
+
+1. Goto the Jenkins click on Manage Jenkins - > Manage Plugins 
+
+1. Click on Available tab and Search S3 publisher plugin and Install without Restart.
+
+2. After installtion Complete Click on Jenkins Icon from Left corner - > Manage Jenkins -> Configure System -> Amazon S3 profiles(at the bootom ) 
+
+3. Fill the information Profile name- Provide any name here and Click on Use IAM Role	 Checkbox after Click on Apply and Save. 
 
 
 ```
