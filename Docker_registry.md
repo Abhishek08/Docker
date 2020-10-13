@@ -38,11 +38,28 @@ services:
 
 ```
 
-### run the docker compose file 
+### Run the docker compose file 
 
 ```sh
 
 docker-compose up -d  
 
 ```
+
+### Pull any image from the docker hub and setup the insecure docker registry 
+
+```sh 
+
+vi /etc/docker/daemon.json
+
+{
+    "insecure-registries" : ["selftuts.local.com:5000"]
+}
+
+restart the Docker 
+
+
+
+```
+
 
