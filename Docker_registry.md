@@ -53,7 +53,7 @@ docker-compose up -d
 vi /etc/docker/daemon.json
 
 {
-    "insecure-registries" : ["selftuts.local.com:5000"]
+    "insecure-registries" : ["youripAddress:5000"]
 }
 
 restart the Docker 
