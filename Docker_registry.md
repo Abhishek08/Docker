@@ -46,7 +46,7 @@ docker-compose up -d
 
 ```
 
-### Pull any image from the docker hub and setup the insecure docker registry 
+### Setup the insecure docker registry 
 
 ```sh 
 
@@ -63,5 +63,27 @@ sudo systemctl stop docker
 sudo systemctl start docker
 
 ```
+
+### Pull the image from docker hub and upload into the docker registry 
+
+```sh
+
+1. Pull the image 
+
+docker pull nginx 
+
+2. update the tag for nginx image 
+
+docker image tag nginx:latest ipaddress:5000/imagename_version
+
+3. upload this image into the docker registry 
+
+docker image push ipaddress:5000/imagename_version
+
+4. Pull the image from docker registry 
+
+docker pull ipaddress:5000/imagename_version
+```
+
 
 
