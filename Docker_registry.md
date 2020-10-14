@@ -58,7 +58,7 @@ vi /etc/docker/daemon.json
 
 restart the Docker 
 
-
+sudo systemctl start docker
 
 ```
 
