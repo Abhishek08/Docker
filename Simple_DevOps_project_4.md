@@ -1,5 +1,5 @@
 
-# DevOps Project Android CI CD Deploy build to S3 Bucket.
+# DevOps Project Android CI CD Deploy build to App Center
 
 ##### Below are the Steps for creating this project .
 
