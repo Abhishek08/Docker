@@ -42,3 +42,23 @@
 17.  yes | sdkmanager "platform-tools" "platforms;android-29"
 
 ```
+
+
+##### SetUp Java and Android Path 
+
+```sh
+
+1. Goto Manage Jenkins ->  Global Tool Configration 
+
+2. Setup Java Path in Env, 
+
+JAVA Default Location = /usr/lib/jvm/java-8-openjdk-amd64/
+
+3. Click Save and Apply and Back button 
+
+4. Click on Configration - in Env. Set the Android_SDK path  
+
+ANDROID_HOME = /usr/lib/android-sdk/
+
+
+```
