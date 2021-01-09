@@ -62,3 +62,55 @@ ANDROID_HOME = /usr/lib/android-sdk/
 
 
 ```
+
+
+##### Setup Path in Jenkins
+
+
+```sh
+
+
+JAVA Default Location = /usr/lib/jvm/java-8-openjdk-amd64/
+
+3. Click Save and Apply and Back button 
+
+4. Click on Configration - in Env. Set the Android_SDK path  
+
+ANDROID_HOME = /usr/lib/android-sdk/
+
+
+```
+
+##### SetUp AppCenter Account 
+
+```sh
+
+1. Create the account in AppCenter 
+
+2. Copy the API Key from -> Account Setting  -> User API token -> Click on New API -> Provide the name and Allow all the access and copy the token
+
+3. Goto Dashboard -> Click on Add New - >
+
+                    1. Click on Add New App
+                    2. Provide the App Name.
+                    3. Release Type 
+                    5. OS type 
+                    6. Platform 
+4. After Creating App 
+          1. Click on Distribution 
+          2. Click on Group 
+          3. Create the New Group
+
+5. Copy the User name from ->  Account Setting 
+
+```
+
+##### Post Build setting to App Center 
+
+```sh
+
+1. Provide the API token 
+2. Provide the App Name 
+3. Provide the APK path 
+4. Provide the Group Name 
+```
