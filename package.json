@@ -1,0 +1,15 @@
+{
+  "name": "my react native app",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "android": "react-native run-android",
+    "android:clean": "cd android && ./gradlew clean && cd ..",
+    "android:build:debug": "cd android && ./gradlew assembleDebug && open app/build/outputs/apk/debug",
+    "android:build:release": "cd android && ./gradlew assembleRelease && open app/build/outputs/apk/release",
+    "ios": "react-native run-ios",
+    "lint": "eslint .",
+    "start": "react-native start",
+    "test": "jest",
+  }
+...
